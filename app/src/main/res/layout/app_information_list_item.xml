@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/item_packageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APP name"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/item_isEnabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已启用"
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/item_sourceDir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="源目录："
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/item_dataDir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数据目录："
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>

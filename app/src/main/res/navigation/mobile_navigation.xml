@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_basic_information">
+
+    <fragment
+        android:id="@+id/nav_basic_information"
+        android:name="com.example.informationcollector.ui.basic_information.BIFragment"
+        android:label="@string/menu_basic_information"
+        tools:layout="@layout/fragment_basic_information" />
+
+    <fragment
+        android:id="@+id/nav_app_information"
+        android:name="com.example.informationcollector.ui.app_information.AIFragment"
+        android:label="@string/menu_app_information"
+        tools:layout="@layout/fragment_app_information" />
+
+    <fragment
+        android:id="@+id/nav_sensor_information"
+        android:name="com.example.informationcollector.ui.sensor_information.SIFragment"
+        android:label="@string/menu_sensor_information"
+        tools:layout="@layout/fragment_sensor_information" />
+
+    <fragment
+        android:id="@+id/nav_network_information"
+        android:name="com.example.informationcollector.ui.network_information.NIFragment"
+        android:label="@string/menu_network_information"
+        tools:layout="@layout/fragment_sensor_information" />
+</navigation>

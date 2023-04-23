@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Information Collector</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_basic_information">设备基本信息</string>
+    <string name="menu_app_information">设备应用信息</string>
+    <string name="menu_sensor_information">传感器信息</string>
+    <string name="menu_network_information">网络信息</string>
+</resources>

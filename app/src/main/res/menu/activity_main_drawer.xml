@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_basic_information"
+            android:icon="@drawable/bi_icon"
+            android:title="@string/menu_basic_information" />
+        <item
+            android:id="@+id/nav_app_information"
+            android:icon="@drawable/ai_icon"
+            android:title="@string/menu_app_information" />
+        <item
+            android:id="@+id/nav_sensor_information"
+            android:icon="@drawable/si_icon"
+            android:title="@string/menu_sensor_information" />
+        <item
+            android:id="@+id/nav_network_information"
+            android:icon="@drawable/ni_icon"
+            android:title="@string/menu_network_information" />
+    </group>
+</menu>
