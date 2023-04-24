@@ -28,4 +28,14 @@
         android:name="com.example.informationcollector.ui.network_information.NIFragment"
         android:label="@string/menu_network_information"
         tools:layout="@layout/fragment_sensor_information" />
+    <fragment
+        android:id="@+id/nav_location_information"
+        android:name="com.example.informationcollector.ui.locaton_information.LIFragment"
+        android:label="@string/menu_location_information"
+        tools:layout="@layout/fragment_location_information" />
+    <fragment
+        android:id="@+id/nav_camera_information"
+        android:name="com.example.informationcollector.ui.camera_information.CIFragment"
+        android:label="@string/menu_camera_information"
+        tools:layout="@layout/fragment_camera_information" />
 </navigation>

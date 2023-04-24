@@ -11,4 +11,6 @@
     <string name="menu_app_information">设备应用信息</string>
     <string name="menu_sensor_information">传感器信息</string>
     <string name="menu_network_information">网络信息</string>
+    <string name="menu_location_information">位置信息</string>
+    <string name="menu_camera_information">图像信息</string>
 </resources>
