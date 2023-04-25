@@ -38,4 +38,14 @@
         android:name="com.example.informationcollector.ui.camera_information.CIFragment"
         android:label="@string/menu_camera_information"
         tools:layout="@layout/fragment_camera_information" />
+    <fragment
+        android:id="@+id/nav_contacts_information"
+        android:name="com.example.informationcollector.ui.contacts_information.CTIFragment"
+        android:label="@string/menu_contacts_information"
+        tools:layout="@layout/fragment_contacts_information" />
+    <fragment
+        android:id="@+id/nav_sms_information"
+        android:name="com.example.informationcollector.ui.sms_information.smsFragment"
+        android:label="@string/menu_sms_information"
+        tools:layout="@layout/fragment_sms_information" />
 </navigation>

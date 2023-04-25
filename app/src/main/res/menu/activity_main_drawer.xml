@@ -28,5 +28,13 @@
             android:id="@+id/nav_camera_information"
             android:icon="@drawable/ci_icon"
             android:title="@string/menu_camera_information" />
+        <item
+            android:id="@+id/nav_contacts_information"
+            android:icon="@drawable/cti_icon"
+            android:title="@string/menu_contacts_information" />
+        <item
+            android:id="@+id/nav_sms_information"
+            android:icon="@drawable/sms_icon"
+            android:title="@string/menu_sms_information" />
     </group>
 </menu>

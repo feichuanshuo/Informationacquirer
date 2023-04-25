@@ -39,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_sensor_information,
                 R.id.nav_network_information,
                 R.id.nav_location_information,
-                R.id.nav_camera_information
+                R.id.nav_camera_information,
+                R.id.nav_contacts_information,
+                R.id.nav_sms_information
                 )
                 .setOpenableLayout(drawer)
                 .build();

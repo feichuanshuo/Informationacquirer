@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 <!--    开启读取手机状态信息权限-->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 <!--    开启获取位置信息的权限-->
@@ -19,6 +20,11 @@
     <uses-feature android:name="android.hardware.camera" android:required="false" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
+<!--    开启获取通讯录权限-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+<!--    获取短信权限-->
+    <uses-feature android:name="android.hardware.telephony"/>
+    <uses-permission android:name="android.permission.READ_SMS" />
 
     <application
         android:allowBackup="true"

@@ -13,4 +13,6 @@
     <string name="menu_network_information">网络信息</string>
     <string name="menu_location_information">位置信息</string>
     <string name="menu_camera_information">图像信息</string>
+    <string name="menu_contacts_information">联系人信息</string>
+    <string name="menu_sms_information">手机短信</string>
 </resources>

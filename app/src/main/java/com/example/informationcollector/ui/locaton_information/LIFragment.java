@@ -30,6 +30,7 @@ public class LIFragment extends Fragment {
         Context context = getContext();
         TextView textView = binding.LItext;
 
+
         // 获取位置服务
         LocationManager locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
 

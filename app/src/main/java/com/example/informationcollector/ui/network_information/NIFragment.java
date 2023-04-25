@@ -9,6 +9,7 @@ import android.net.wifi.ScanResult;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +23,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.informationcollector.databinding.FragmentNetworkInformationBinding;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class NIFragment extends Fragment {
@@ -82,6 +85,9 @@ public class NIFragment extends Fragment {
         final ListView CWiFilistView = binding.CWiFilist;
         CWiFilistView.setAdapter(cadapter);
 
+        // 将日期时间格式转换为SimpleDateFormat对象
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 HH:mm");
+
         // 获取周围wifi信息
         WifiManager wifiManager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         if (ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -91,13 +97,17 @@ public class NIFragment extends Fragment {
             // Permission granted, continue with scanning
             List<ScanResult> wifiList = wifiManager.getScanResults();
             for (ScanResult scanResult : wifiList) {
+                long currentTimeMillis = System.currentTimeMillis();
+                long elapsedTimeMillis = SystemClock.elapsedRealtime();
+                long scanTimestamp = scanResult.timestamp / 1000; // 将微秒转换为毫秒
+                long unixTimestamp = currentTimeMillis - elapsedTimeMillis + scanTimestamp;
                 AWiFiList.add(
                         "wifi名称：" + scanResult.SSID + "\n" +
                         "BSSID：" + scanResult.BSSID + "\n" +
                         "频率：" + scanResult.frequency + "\n" +
                         "加密和身份验证方案：" + scanResult.capabilities + "\n" +
                         "信号强度：" + scanResult.level + "\n" +
-                        "时间戳：" + scanResult.timestamp
+                        "时间戳：" + sdf.format(new Date(unixTimestamp))
                 );
             }
             // 创建ArrayAdapter适配器
